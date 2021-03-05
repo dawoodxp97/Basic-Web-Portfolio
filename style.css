@@ -1,3 +1,6 @@
+*{
+    scroll-behavior: smooth;
+}
 .navbar-custom{
     background-color: rgb(10, 10, 48);
 }
@@ -10,3 +13,21 @@
 .navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
     color: rgb(158, 0, 0) !important;
 }
+.HeadImage{
+    background-color: rgba(5, 5, 63, 0.959);
+    height: 90vh;
+}
+#image{
+    height: 300px;
+    width: 300px;
+    border-radius: 300px;
+}
+.intro{
+    background-color: rgba(5, 5, 63, 0.959);
+    color: white;
+}
+#intro-text{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*font-family: 'RocknRoll One', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;*/

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Required Meta Tags-->
     <meta charset="UTF-8">
@@ -9,47 +10,84 @@
     <!--StyleSheet-->
     <link href="./style.css" type="text/css" rel="stylesheet" />
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <!--Header Section-->
+    <!--NavBar Section-->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SKD</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">SKD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-      <!--Projects Section-->
-      
-    
+    </nav>
+    <!--Home Section-->
+    <div>
+        <div class="row m-0">
+            <div class="col-6 HeadImage text-center pt-5">
+                <img src="/resources/images/IMG_20200229_202837.jpg" id="image" alt="Profile Pic">
+            </div>
+            <div class="col-6 pt-5 intro">
+                <div id="typed-strings">
+                    <p id="intro-text">Hi all, I'm Shaik Dawood. <br> A passionate developer having an experience of building websites with HTML, CSS, JavaScript and some other cool libraries and frameworks.
+                    <br>
+                    <a class="btn btn-danger rounded-pill Download" target="_blank" href="" role="button">Download CV</a></p>
+                </div>
+                <span id="typed"></span>
+            </div>
+        </div>
+    </div>
 
+    <!--Projects Section-->
+    <section>
+        <div class="container">
+            <div class="pr-heading">
+                <p>My Projects</p>
+            </div>
+            <div class="row">
+                <div class="col ">
 
+                </div>
 
+            </div>
 
-
-
-
-
+        </div>
+    </section>
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+          <script>
+            var typed = new Typed('#typed', {
+              stringsElement: '#typed-strings',
+              typeSpeed: 10,
+            });
+          </script>
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
