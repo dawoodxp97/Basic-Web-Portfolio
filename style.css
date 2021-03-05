@@ -1,0 +1,12 @@
+.navbar-custom{
+    background-color: rgb(10, 10, 48);
+}
+.navbar-custom .navbar-brand {
+    color: white;
+}
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link{
+    color: white;
+}
+.navbar-custom .navbar-collapse .navbar-nav .nav-item .nav-link:hover{
+    color: rgb(158, 0, 0) !important;
+}
