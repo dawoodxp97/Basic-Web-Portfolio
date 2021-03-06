@@ -19,6 +19,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Source+Sans+Pro:wght@300&display=swap"
         rel="stylesheet">
+    <!-- Social Media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -34,44 +36,50 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#HomeSection">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#ProjectSection">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#ExperienceSection">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#ContactSection">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--Home Section-->
-    <div>
+    <div id="HomeSection">
         <div class="row m-0">
             <div class="col-6 HeadImage text-center pt-5">
-                <div data-aos="fade-right">
+                <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <img src="/resources/images/IMG_20200229_202837.jpg" id="image" alt="Profile Pic">
                 </div>
             </div>
             <div class="col-6 pt-5 intro">
-                <div id="typed-strings">
-                    <p id="intro-text">Hi all, I'm Shaik Dawood. <br> A passionate developer having an experience of
-                        building websites with HTML, CSS, JavaScript and some other cool libraries and frameworks.
-                        <br>
-                        <a class="btn btn-danger rounded-pill Download" target="_blank" href="" role="button">Download
-                            CV</a></p>
+                <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                    data-aos-duration="500">
+                    <div id="typed-strings">
+                        <p id="intro-text">Hi all, I'm Shaik Dawood. <br> A passionate developer having an experience of
+                            building websites with HTML, CSS, JavaScript and some other cool libraries and frameworks.
+                            <br>
+                            <a class="btn btn-danger rounded-pill Download" target="_blank" href=""
+                                role="button">Download
+                                CV</a></p>
+                    </div>
+                    <span id="typed"></span>
+
                 </div>
-                <span id="typed"></span>
+
             </div>
         </div>
     </div>
 
     <!--Projects Section-->
-    <section class="prj-sec">
+    <section id="ProjectSection" class="prj-sec">
         <div class="container text-center pt-5">
             <div>
                 <p id="pr-heading">My Projects</p>
@@ -99,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-aos="flip-up" class="col-lg-4">
+                <div data-aos="flip-up" class="col-lg-4 ">
                     <div class="card" style="width: 18rem;">
                         <img src="/resources/images/prj-pic.jpg" class="card-img-top" alt="project-1-pic">
                         <div class="card-body">
@@ -116,27 +124,86 @@
         </div>
     </section>
     <!--Experience Section-->
-    <section class="exp-section">
+    <section id="ExperienceSection" class="exp-section">
         <div class="container text-center justify-content-center pt-5">
             <div class="Heading pb-5">Experience</div>
-            
-                <div class="d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <img src="/resources/images/gL-img.jpg" class="card-img-top" alt="GL Image">
-                        <div class="card-body">
-                          <h5 class="card-title">Associate Analyst</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Globallogic Technologies Pvt Ltd</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          
-                        </div>
-                      </div>
-
+            <div data-aos="zoom-in" class="d-flex justify-content-center">
+                <div class="card experience" style="width: 18rem;">
+                    <img src="/resources/images/gL-img.jpg" class="card-img-top" alt="GL Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Associate Analyst</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Globallogic Technologies Pvt Ltd</h6>
+                        <p class="card-text">I'm a annotation specialist. <br> Annotated the data of ML models in the
+                            Research and Machine Intelligence (RMI) team. </p>
+                    </div>
                 </div>
-
-            
+            </div>
         </div>
     </section>
-    <!--Typed JS-->
+    <!--Contact Section-->
+    <section id='ContactSection'>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 p-5">
+                    <div class="Details">
+                        I'm available for any type of collaborations. <br />
+                        Feel free to contact me.<br /><br />
+                        <h6><b>Email:</b> <a href='emailto:dawoodmsam422@gmail.com'>dawoodmsam422@gmail.com</a></h6>
+                        <h6><b>Contact No: </b><a href='tel: +918096700422'>+91 8096700422</a></h6>
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <div class="ContactForm">
+                        <div class="ct-Heading text-center">Contact Me</div>
+                        <!-- <div class="row"> -->
+                        <form>
+                            <div class="col-12">
+                                <input type='text' placeholder="Full Name" class="mb-3 field" />
+                            </div>
+                            <div class="col-12">
+                                <input type='email' placeholder="Email" class="mb-3 field" />
+                            </div>
+                            <div class="col-12">
+                                <input type='number' placeholder="Contact Number" class="mb-3 field" />
+                            </div>
+                            <div class="col-12">
+                                <textarea cols="8" rows="8" placeholder="Enter your mesage"
+                                    class="mb-3 field"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <button class="button" style="vertical-align:middle"><span>Submit </span></button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+        <div class="footer d-flex justify-content-center">
+            <ul>
+                <li>
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-youtube-play"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-github-square"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
         var typed = new Typed('#typed', {
