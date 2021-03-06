@@ -9,12 +9,17 @@
     <title>Shaik Dawood | Portfolio</title>
     <!--StyleSheet-->
     <link href="./style.css" type="text/css" rel="stylesheet" />
+    <!--AOS Animation CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Source+Sans+Pro&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Source+Sans+Pro:wght@300&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,13 +53,17 @@
     <div>
         <div class="row m-0">
             <div class="col-6 HeadImage text-center pt-5">
-                <img src="/resources/images/IMG_20200229_202837.jpg" id="image" alt="Profile Pic">
+                <div data-aos="fade-right">
+                    <img src="/resources/images/IMG_20200229_202837.jpg" id="image" alt="Profile Pic">
+                </div>
             </div>
             <div class="col-6 pt-5 intro">
                 <div id="typed-strings">
-                    <p id="intro-text">Hi all, I'm Shaik Dawood. <br> A passionate developer having an experience of building websites with HTML, CSS, JavaScript and some other cool libraries and frameworks.
-                    <br>
-                    <a class="btn btn-danger rounded-pill Download" target="_blank" href="" role="button">Download CV</a></p>
+                    <p id="intro-text">Hi all, I'm Shaik Dawood. <br> A passionate developer having an experience of
+                        building websites with HTML, CSS, JavaScript and some other cool libraries and frameworks.
+                        <br>
+                        <a class="btn btn-danger rounded-pill Download" target="_blank" href="" role="button">Download
+                            CV</a></p>
                 </div>
                 <span id="typed"></span>
             </div>
@@ -62,31 +71,87 @@
     </div>
 
     <!--Projects Section-->
-    <section>
-        <div class="container">
-            <div class="pr-heading">
-                <p>My Projects</p>
+    <section class="prj-sec">
+        <div class="container text-center pt-5">
+            <div>
+                <p id="pr-heading">My Projects</p>
             </div>
             <div class="row">
-                <div class="col ">
-
+                <div data-aos="flip-up" class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/resources/images/prj-pic.jpg" class="card-img-top" alt="project-1-pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Project Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-up" class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/resources/images/prj-pic.jpg" class="card-img-top" alt="project-1-pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Project Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-up" class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/resources/images/prj-pic.jpg" class="card-img-top" alt="project-1-pic">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Project Link</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
         </div>
     </section>
+    <!--Experience Section-->
+    <section class="exp-section">
+        <div class="container text-center justify-content-center pt-5">
+            <div class="Heading pb-5">Experience</div>
+            
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/resources/images/gL-img.jpg" class="card-img-top" alt="GL Image">
+                        <div class="card-body">
+                          <h5 class="card-title">Associate Analyst</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Globallogic Technologies Pvt Ltd</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          
+                        </div>
+                      </div>
+
+                </div>
+
+            
+        </div>
+    </section>
     <!--Typed JS-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-          <script>
-            var typed = new Typed('#typed', {
-              stringsElement: '#typed-strings',
-              typeSpeed: 10,
-            });
-          </script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 10,
+        });
+    </script>
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <!--AOS Animation JS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

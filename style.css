@@ -1,3 +1,6 @@
+body, html{
+    height: 100%;
+}
 *{
     scroll-behavior: smooth;
 }
@@ -26,8 +29,31 @@
     background-color: rgba(5, 5, 63, 0.959);
     color: white;
 }
-#intro-text{
+
+.card-text{
     font-family: 'Source Sans Pro', sans-serif;
 }
-/*font-family: 'RocknRoll One', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;*/
+#pr-heading{
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Comfortaa', cursive;
+}
+.prj-sec{
+    background-image:url('./resources/images/prj-sec-bg-img-f.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.Heading{
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Comfortaa', cursive;
+}
+.exp-section{
+    background-image: url('./resources/images/exp-sec-bg-img-f.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
